@@ -35,9 +35,9 @@ Built with a sleek UI and smooth animations for a next-gen feel.
 
 | Desktop |
 |:---:|
-| ![Search Bar](https://github.com/Damantha126/Lyrics-Search/blob/main/public/screenshot.png) |
+| ![Search Bar](https://raw.githubusercontent.com/Damantha126/Lyrics-Search/refs/heads/main/public/Screenshot.png) |
 | Mobile |
-| ![Lyrics Card](phttps://github.com/Damantha126/Lyrics-Search/blob/main/public/screenshot1.jpg) |
+| ![Lyrics Card](https://raw.githubusercontent.com/Damantha126/Lyrics-Search/refs/heads/main/public/Screenshot1.jpg) |
 
 ---
 
