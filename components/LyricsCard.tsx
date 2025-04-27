@@ -25,6 +25,7 @@ const LyricsCard = ({ title, artist, lyrics, coverImage, language }: LyricsCardP
         className: "bg-white/10 backdrop-blur-md border-white/20 text-white",
       });
     } catch (err) {
+      console.log(err);
       const textArea = document.createElement("textarea");
       textArea.value = lyrics;
       textArea.style.position = "fixed"; // Prevent scrolling
@@ -37,6 +38,7 @@ const LyricsCard = ({ title, artist, lyrics, coverImage, language }: LyricsCardP
           className: "bg-white/10 backdrop-blur-md border-white/20 text-white",
         });
       } catch (err) {
+        console.log(err);
         toast.error("Could not copy lyrics to clipboard. Please try again.", {
           className: "bg-white/10 backdrop-blur-md border-white/20 text-white",
         });
@@ -70,7 +72,8 @@ const LyricsCard = ({ title, artist, lyrics, coverImage, language }: LyricsCardP
           {/* Copy Button at Top-Right */}
           <Button 
             onClick={copyLyrics}
-            className='cursor-pointer absolute top-0 right-0 px-3 py-1 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white transition-all duration-300'>
+            className='cursor-pointer absolute top-0 right-0 px-3 py-1 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white transition-all duration-300'
+            disabled={copying}>
             <Copy /> Copy Lyrics
           </Button>
           <div>

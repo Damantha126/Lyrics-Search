@@ -7,24 +7,6 @@ import { Toaster } from 'sonner';
 import { toast } from "sonner";
 import { AnimatePresence, motion } from "framer-motion"
 
-interface LyricsData {
-  title?: string;
-  artist?: string;
-  lyrics?: string;
-  cover_image?: string;
-  language?: string;
-  msg?: string;
-}
-
-interface ApiResponse {
-  status: {
-    success: boolean;
-    code: number;
-    description: string;
-  };
-  result: LyricsData;
-}
-
 export default function Home() {
   const [loading, setLoading] = useState(false);
   const [lyrics, setLyrics] = useState<LyricsData | null>(null);
